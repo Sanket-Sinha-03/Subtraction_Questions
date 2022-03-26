@@ -1,0 +1,65 @@
+/* body{
+    background-color: aqua;
+} */
+.heading{
+    display: flex;
+}
+
+.heading-right{
+    flex: 1;
+    padding: 10px 10px;
+}
+.heading-left{
+    flex: 1;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+.heading-left>p{
+    padding: 0;
+    margin: 0;
+}
+.sub-heading-parent{
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: auto;
+    margin: 10px 50px; 
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+
+}
+.sub-heading{
+    display: flex;
+}
+
+.sub-heading-left{
+    flex: 1;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+}
+.sub-heading-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ol{
+    font-weight: bold;
+}
+
+li{
+    font-weight: lighter;
+}
+
+.sub-problems{
+    text-align: center;
+}
+
+button{
+    margin: auto;
+}
