@@ -1,5 +1,6 @@
 import { getrandom } from "./getrandomint";
 import { ans } from "./answer";
+// Function for Problem type 5
 export function problem_5(n:number){
     var v=[] as number[];
     var v1=[] as number[];
@@ -19,11 +20,7 @@ export function problem_5(n:number){
                 f=1;
             }
         }
-        // for(let i=0;i<v1.length;i++){
-        //     if(y==v1[i]){
-        //         g=1;
-        //     }
-        // }
+        
         if(f==1){
             continue;
         }
@@ -36,7 +33,7 @@ export function problem_5(n:number){
         cnt++;
         v.push(x);
         v1.push(y);
-        // console.log(ans(x,y));
+        
         answ.push(ans(x,y));
     }
     return answ;

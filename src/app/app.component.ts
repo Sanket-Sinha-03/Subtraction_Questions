@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { fun1 } from 'src/main';
-import { fun2 } from 'src/main';
+// import { fun1 } from 'src/main';
+// import { fun2 } from 'src/main';
 // import { Appfunction1 } from 'src/function1';
 import { Router } from '@angular/router';
 import { problem_1 } from 'src/function1';
@@ -13,8 +13,7 @@ import { problem_5 } from 'src/function5';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-// var x:number;
-// var y:number;
+
 export class AppComponent {
   showQuestions = true;
   title = 'Subtraction Questions';
@@ -26,18 +25,12 @@ export class AppComponent {
   constructor(){
 
   }
-  // getval(val:string){
-  //   console.warn(val)
-  //   this.quetype=val;
-  //   this.x=+this.quetype;
-  //   fun1(this.x);
-  //   // fun3(this.x);
-  // }
+  
   getnum(val:string,val1:string){
     console.warn(val)
     this.quetype=val;
     this.x=+this.quetype;
-    fun1(this.x);
+    // fun1(this.x);
 
     console.warn(val1)
     this.numque=val1;
@@ -46,12 +39,10 @@ export class AppComponent {
     a=this.x;
     let b:number;
     b=this.y;
-    // fun2(this.x,this.y);
-    // this.router.navigateByUrl('/first-component')
-    // let cl = new Appfunction1()
+    // checking the problem type and passing the value to the corresponding functions
   if(a==1){
     this.ans=problem_1(b)
-    // problem_1(b);
+    
   }
   else if(a==2){
     this.ans=problem_2(b);
@@ -67,11 +58,7 @@ export class AppComponent {
   }
   this.showQuestions = false;
   }
-  // getfin(){
-  //   fun3(this.x,this.y);
-  // }
-  // htmlString = <h1>{{quetype}}</h1>;
-  // document.getElementById('element')?.innerHTML;
+  
 }
 
 export function gv(){
